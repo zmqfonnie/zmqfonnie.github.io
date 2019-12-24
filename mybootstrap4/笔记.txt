@@ -1,0 +1,314 @@
+网格系统
+Bootstrap 4 的网格系统是响应式的，列会根据屏幕大小自动重新排列。
+
+.container  固定宽度 居中
+.container-fluid  全屏
+.row 下col生效
+.col- 针对所有设备
+.col-sm- 平板 - 屏幕宽度等于或大于 576px
+.col-md- 桌面显示器 - 屏幕宽度等于或大于 768px)
+.col-lg- 大桌面显示器 - 屏幕宽度等于或大于 992px)
+.col-xl- 超大桌面显示器 - 屏幕宽度等于或大于 1200px)
+
+文字排版
+Bootstrap 4 默认的 font-size 为 16px, line-height 为 1.5。
+默认的 font-family 为 "Helvetica Neue", Helvetica, Arial, sans-serif。
+此外，所有的 <p> 元素 margin-top: 0 、 margin-bottom: 1rem (16px)。
+
+.font-weight-bold	加粗文本
+.font-weight-normal	普通文本
+.font-weight-light	更细的文本
+.font-italic	斜体文本
+.lead	让段落更突出
+.small	指定更小文本 (为父元素的 85% )
+.text-left	左对齐
+.text-center	居中
+.text-right	右对齐
+.text-justify	设定文本对齐,段落中超出屏幕部分文字自动换行
+.text-nowrap	段落中超出屏幕部分不换行
+.text-lowercase	设定文本小写
+.text-uppercase	设定文本大写
+.text-capitalize	设定单词首字母大写
+.initialism	显示在 <abbr> 元素中的文本以小号字体展示，且可以将小写字母转换为大写字母
+.list-unstyled	移除默认的列表样式，列表项中左对齐 ( <ul> 和 <ol> 中)。 这个类仅适用于直接子列表项 (如果需要移除嵌套的列表项，你需要在嵌套的列表中使用该样式)
+.list-inline	将所有列表项放置同一行
+.pre-scrollable	使 <pre> 元素可滚动，代码块区域最大高度为340px,一旦超出这个高度,就会在Y轴出现滚动条
+
+颜色
+Bootstrap 4 提供了一些有代表意义的颜色类：
+.text-muted, .text-primary, .text-success,
+.text-info, .text-warning, .text-danger,
+.text-secondary, .text-white, .text-dark, .text-light:
+
+
+表格
+.table-primary	蓝色: 指定这是一个重要的操作
+.table-success	绿色: 指定这是一个允许执行的操作
+.table-danger	红色: 指定这是可以危险的操作
+.table-info	浅蓝色: 表示内容已变更
+.table-warning	橘色: 表示需要注意的操作
+.table-active	灰色: 用于鼠标悬停效果
+.table-secondary	灰色: 表示内容不怎么重要
+.table-light	浅灰色，可以是表格行的背景
+.table-dark	深灰色，可以是表格行的背景
+
+.table-striped 类，您将在 <tbody> 内的行上看到条纹
+.table-dark 和 .table-striped 类可以创建黑色的条纹表格：
+.table-hover 类可以为表格的每一行添加鼠标悬停效果（灰色背景）：
+.table-bordered 类可以为表格添加边框
+
+.table-responsive-sm	< 576px  //响应式表格 写在外层div
+.table-responsive-md	< 768px
+.table-responsive-lg	< 992px
+.table-responsive-xl	< 1200px
+.table-sm    //小表格
+
+
+图像形状
+.rounded 类可以让图片显示圆角效果：
+.rounded-circle 类可以设置椭圆形图片:
+.img-thumbnail 类用于设置图片缩略图(图片有边框):
+.img-fluid 类设置了 max-width: 100%; 、 height: auto; :
+.float-right 类来设置图片右对齐，使用 .float-left 类设置图片左对齐:
+
+Jumbotron 灰色大屏幕
+.jumbotron 有圆角
+.jumbotron-fluid 没圆角
+
+信息提示框
+提示框可以使用 .alert 类, 后面加上
+.alert-success, .alert-info, .alert-warning,
+.alert-danger, .alert-primary, .alert-secondary,
+.alert-light 或 .alert-dark 类来实现:
+alert-link 类来设置匹配提示框颜色的a链接：
+.alert-dismissible 类，然后在关闭按钮的链接上添加 class="close" 和 data-dismiss="alert" 类来设置提示框的关闭操作。
+&times; (×) 是 HTML 实体字符，来表示关闭操作，而不是字母 "x"。
+.fade 和 .show 类用于设置提示框在关闭时的淡出和淡入效果：
+
+按钮
+按钮类可用于 <a>, <button>, 或 <input> 元素上:
+.btn-block 类可以设置块级按钮：
+.active 类可以设置按钮是可用的，
+disabled 属性可以设置按钮是不可点击的。 注意 <a> 元素不支持 disabled 属性，你可以通过添加 .disabled 类来禁止链接的点击。
+
+按钮组
+可以在 <div> 元素上添加 .btn-group 类来创建按钮组。
+.btn-group-lg|sm 类来设置按钮组的大小
+.btn-group-vertical 类来创建垂直的按钮组：
+
+徽章 badge
+.badge 类加上带有指定意义的颜色类 (如 .badge-secondary) 添加到 <span> 元素上即可。 徽章可以根据父元素的大小的变化而变化:
+
+进度条
+添加一个带有 .progress 类的 <div>。
+接着，在上面的 <div> 内，添加一个带有 class .progress-bar 的空的 <div>。
+添加一个带有百分比表示的宽度的 style 属性，例如 style="width:70%" 表示进度条在 70% 的位置。
+.progress-bar-striped 类来设置条纹进度条：
+.progress-bar-animated 类可以为进度条添加动画：
+
+分页
+<ul> 元素上添加 .pagination 类。然后在 <li> 元素上添加 .page-item 类：
+.active 类来高亮显示：
+.disabled 类可以设置分页链接不可点击:
+.pagination-lg 类设置大字体的分页条目，
+.pagination-sm 类设置小字体的分页条目:
+
+
+面包屑导航
+<ul> 元素上添加 .breadcrumb 类。然后在 <li> 元素上添加 .breadcrumb-item 类：
+.breadcrumb 和 .breadcrumb-item 类用于设置面包屑导航：
+
+列表组
+.list-group-item-success, list-group-item-secondary,
+.list-group-item-info, list-group-item-warning,
+.list-group-item-danger, list-group-item-dark 和 list-group-item-light:
+<ul> 元素上添加 .list-group 类, 在 <li> 元素上添加 .list-group-item 类:
+.active 类来设置激活状态的列表项：
+.disabled 类用于设置禁用的列表项:
+.list-group-item-action类鼠标悬停显示灰色背景:
+
+卡片
+.card与.card-body类来创建一个简单的卡片
+.card-header类用于创建卡片的头部样式， .card-footer 类用于创建卡片的底部样式
+.bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark 和 .bg-light。
+.card-title 类来设置卡片的标题 。 .card-text 类用于设置卡片正文的内容。 .card-link 类用于给链接设置颜色。
+<img> 添加 .card-img-top（图片在文字上方） 或 .card-img-bottom（图片在文字下方 来设置图片卡片：
+.card-img-overlay 类:如果图片要设置为背景，可以使用
+
+下拉菜单
+.dropdown 类用来指定一个下拉菜单。
+我们可以使用一个按钮或链接来打开下拉菜单， 按钮或链接需要添加 .dropdown-toggle 和 data-toggle="dropdown" 属性。
+<div> 元素上添加 .dropdown-menu 类来设置实际下拉菜单，然后在下拉菜单的选项中添加 .dropdown-item 类。
+.dropdown-divider 类用于在下拉菜单中创建一个水平的分割线：
+.dropdown-header 类用于在下拉菜单中添加标题：
+.active 类会让下拉菜单的选项高亮显示 (添加蓝色背景)。禁用.disabled
+如果我们想让下拉菜单右对齐，可以在元素上的 .dropdown-menu 类后添加 .dropdown-menu-right 类。
+如果你希望下拉菜单向上弹出，可以将 <div> 元素的 class="dropdown" 替换为 "dropup":
+
+折叠 手风琴
+折叠可以很容易的实现内容的显示与隐藏。
+.collapse 类用于指定一个折叠元素 (实例中的 <div>); 点击按钮后会在隐藏与显示之间切换。
+控制内容的隐藏与显示，需要在 <a> 或 <button> 元素上添加 data-toggle="collapse" 属性。 data-target="#id" 属性是对应折叠的内容
+.show 类让内容默认显示:
+使用 data-parent 属性来确保所有的折叠元素在指定的父元素下，这样就能实现在一个折叠选项显示时其他选项就隐藏。
+
+
+导航
+<ul> 元素上添加 .nav类，在每个 <li> 选项上添加 .nav-item 类，在每个链接上添加 .nav-link 类:
+.justify-content-center 类设置导航居中显示， .justify-content-end 类设置导航右对齐。
+.flex-column 类用于创建垂直导航：
+.nav-tabs 类可以将导航转化为选项卡。然后对于选中的选项使用 .active 类来标记。
+.nav-pills 类可以将导航项设置成胶囊形状。
+.nav-justified 类可以设置导航项齐行等宽显示。
+如果你要设置选项卡是动态可切换的，可以在每个链接上添加 data-toggle="tab" 属性。 然后在每个选项对应的内容的上添加 .tab-pane 类。
+如果你希望有淡入效果可以在 .tab-pane 后添加 .fade类:
+胶囊状动态选项卡只需要将以上实例的代码中 data-toggle 属性设置为 data-toggle="pill":
+
+
+导航栏
+.navbar 类来创建一个标准的导航栏，后面紧跟: .navbar-expand-xl|lg|md|sm 类来创建响应式的导航栏 (大屏幕水平铺开，小屏幕垂直堆叠)。
+导航栏上的选项可以使用 <ul> 元素并添加 class="navbar-nav" 类。 然后在 <li> 元素上添加 .nav-item 类， <a> 元素上使用 .nav-link 类:
+通过删除 .navbar-expand-xl|lg|md|sm 类来创建垂直导航栏:
+.navbar-brand 类用于高亮显示品牌/Logo:
+要创建折叠导航栏，可以在按钮上添加 class="navbar-toggler", data-toggle="collapse" 与 data-target="#thetarget" 类。
+然后在设置了 class="collapse navbar-collapse" 类的 div 上包裹导航内容（链接）, div 元素上的 id 匹配按钮 data-target 的上指定的 id:
+<form> 元素使用 class="form-inline" 类来排版输入框与按钮：
+.input-group-addon 类用于在输入框前添加小标签。
+.navbar-text 类来设置导航栏上非链接文本，可以保证水平对齐，颜色与内边距一样。
+.fixed-top 类来实现导航栏的固定：
+.fixed-bottom 类用于设置导航栏固定在底部：
+
+表单
+内联表单 <form> 元素上添加 .form-inline类。
+.form-check-inline 类可以让选项显示在同一行上：
+.radio-inline 类可以让选项显示在同一行上：
+.input-group 类来向表单输入框中添加更多的样式，如图标、文本或者按钮。
+使用 .input-group-prepend 类可以在输入框的的前面添加文本信息， .input-group-append 类添加在输入框的后面。
+最后，我们还需要使用 .input-group-text 类来设置文本的样式。
+.input-group-sm 类来设置小的输入框， .input-group-lg 类设置大的输入框：
+
+轮播图
+.carousel	创建一个轮播
+.carousel-indicators	为轮播添加一个指示符，就是轮播图底下的一个个小点，轮播的过程可以显示目前是第几张图。
+.carousel-inner	添加要切换的图片
+.carousel-item	指定每个图片的内容
+.carousel-control-prev	添加左侧的按钮，点击会返回上一张。
+.carousel-control-next	添加右侧按钮，点击会切换到下一张。
+.carousel-control-prev-icon	与 .carousel-control-prev 一起使用，设置左侧的按钮
+.carousel-control-next-icon	与 .carousel-control-next 一起使用，设置右侧的按钮
+.slide	切换图片的过渡和动画效果，如果你不需要这样的效果，可以删除这个类
+<div class="carousel-item"> 内添加 <div class="carousel-caption"> 来设置轮播图片的描述文本：:
+
+
+模态框
+模态框（Modal）是覆盖在父窗体上的子窗体。
+通常，目的是显示来自一个单独的源的内容，可以在不离开父窗体的情况下有一些互动。子窗体可提供信息交互等。
+ .modal-sm 类来创建一个小模态框，.modal-lg 类可以创建一个大模态框。
+尺寸类放在 <div>元素的 .modal-dialog 类后 :
+
+提示框
+通过向元素添加 data-toggle="tooltip" 来来创建提示框。
+title 属性的内容为提示框显示的内容：
+可以使用 data-placement 属性来设定提示框显示的方向: top, bottom, left 或 right:
+提示内容添加 HTML 标签，设置 data-html="true"，内容放在 title 标签里头:
+
+弹出框
+通过向元素添加 data-toggle="popover" 来来创建弹出框。
+title 属性的内容为弹出框的标题，data-content 属性显示了弹出框的文本内容：
+可以使用 data-placement 属性来设定弹出框显示的方向: top, bottom, left 或 right:
+默认情况下，弹出框在再次点击指定元素后就会关闭，你可以使用 data-trigger="focus" 属性来设置在鼠标点击元素外部区域来关闭弹出框：
+如果你想实现在鼠标移动到元素上显示，移除后消失的效果，可以使用 data-trigger 属性，并设置值为 "hover":
+
+滚动监听
+向您想要监听的元素（通常是 body）添加 data-spy="scroll" 。
+然后添加 data-target 属性，它的值为导航栏的 id 或 class (.navbar)。这样就可以联系上可滚动区域。
+注意可滚动项元素上的 id （<div id="section1">） 必须匹配导航栏上的链接选项 （<a href="#section1">)。
+可选项data-offset 属性用于计算滚动位置时，距离顶部的偏移像素。 默认为 10 px。
+设置相对定位: 使用 data-spy="scroll" 的元素需要将其 CSS position 属性设置为 "relative" 才能起作用。
+
+小工具
+使用 border 类可以添加或移除边框:
+rounded 类可以添加圆角边框:
+.float-right 类用于设置元素右浮动， .float-left 设置元素左浮动, .clearfix 类用于清除浮动:
+我们看可以设置浮动 (.float-*-left|right - * 为 sm, md, lg 或 xl)的方向依赖于屏幕的大小:
+使用 .mx-auto 类来设置居中对齐:
+元素上使用 w-* 类 (.w-25, .w-50, .w-75, .w-100, .mw-100) 来设置宽度:
+元素上使用 h-* 类 (.h-25, .h-50, .h-75, .h-100, .mh-100) 来设置高度:
+
+Flex(弹性)布局
+使用 d-flex 类创建一个弹性盒子容器，并设置三个弹性子元素：
+创建显示在同一行上的弹性盒子容器可以使用 d-inline-flex 类:
+.flex-row 可以设置弹性子元素水平显示，这是默认的。
+使用 .flex-row-reverse 类用于设置右对齐显示，即与 .flex-row 方向相反。
+.flex-column 类用于设置弹性子元素垂直方向显示, .flex-column-reverse 用于翻转子元素：
+.justify-content-* 类用于修改弹性子元素的排列方式，* 号允许的值有：start (默认), end, center, between 或 around:
+.flex-fill 类强制设置各个弹性子元素的宽度是一样的:
+.flex-grow-1 用于设置子元素使用剩下的空间。以下实例中前面两个子元素只设置了它们所需要的空间，最后一个获取剩余空间。 :
+.flex-shrink-1 用于设置子元素的收缩规则。
+.order 类可以设置弹性子元素的排序，从 .order-1 到 .order-12，数字越低权重越高( .order-1 排在 .order-2 之前) :
+.mr-auto 类可以设置子元素右外边距为 auto，即 margin-right: auto!important;，.ml-auto 类可以设置子元素左外边距为 auto，即 margin-left: auto!important;:
+弹性容器中包裹子元素可以使用以下三个类： .flex-nowrap (默认), .flex-wrap 或 .flex-wrap-reverse。设置 flex 容器是单行或者多行。
+我们可以使用 .align-content-* 来控制在垂直方向上如何去堆叠子元素，包含的值有：
+.align-content-start (默认), .align-content-end, .align-content-center, .align-content-between, .align-content-around 和 .align-content-stretch。
+这些类在只有一行的弹性子元素中是无效的。
+如果要设置单行的子元素对齐可以使用 .align-items-* 类来控制，包含的值有：
+.align-items-start, .align-items-end, .align-items-center, .align-items-baseline, 和 .align-items-stretch (默认)。
+如果要设置指定子元素对齐对齐可以使用 .align-self-* 类来控制，包含的值有：
+.align-self-start, .align-self-end, .align-self-center, .align-self-baseline, 和 .align-self-stretch (默认)。
+
+
+
+弹性容器
+.d-*-flex	根据不同的屏幕设备创建弹性盒子容器
+.d-*-inline-flex	根据不同的屏幕设备创建行内弹性盒子容器
+方向
+.flex-*-row	根据不同的屏幕设备在水平方向显示弹性子元素
+.flex-*-row-reverse	根据不同的屏幕设备在水平方向显示弹性子元素，且右对齐
+.flex-*-column	根据不同的屏幕设备在垂直方向显示弹性子元素
+.flex-*-column-reverse	根据不同的屏幕设备在垂直方向显示弹性子元素，且方向相反
+内容对齐
+.justify-content-*-start	根据不同屏幕设备在开始位置显示弹性子元素 (左对齐)
+.justify-content-*-end	根据不同屏幕设备在尾部显示弹性子元素 (右对齐)
+.justify-content-*-center	根据不同屏幕设备在 flex 容器中居中显示子元素
+.justify-content-*-between	根据不同屏幕设备使用 "between" 显示弹性子元素
+.justify-content-*-around	根据不同屏幕设备使用 "around" 显示弹性子元素
+等宽
+.flex-*-fill	根据不同的屏幕设备强制等宽
+扩展
+.flex-*-grow-0	不同的屏幕设备不设置扩展
+.flex-*-grow-1	不同的屏幕设备设置扩展
+收缩
+.flex-*-shrink-0	不同的屏幕设备不设置收缩
+.flex-*-shrink-1	不同的屏幕设备设置收缩
+包裹
+.flex-*-nowrap	不同的屏幕设备不设置包裹元素
+.flex-*-wrap	不同的屏幕设备设置包裹元素
+.flex-*-wrap-reverse	不同的屏幕设备反转包裹元素
+内容排列
+.align-content-*-start	根据不同屏幕设备在起始位置堆叠元素
+.align-content-*-end	根据不同屏幕设备在结束位置堆叠元素
+.align-content-*-center	根据不同屏幕设备在中间位置堆叠元素
+.align-content-*-around	根据不同屏幕设备，使用 "around" 堆叠元素
+.align-content-*-stretch	根据不同屏幕设备，通过伸展元素来堆叠
+元素对齐
+.align-items-*-start	根据不同屏幕设备，让元素在头部显示在同一行。
+.align-items-*-end	根据不同屏幕设备，让元素在尾部显示在同一行。
+.align-items-*-center	根据不同屏幕设备，让元素在中间位置显示在同一行。
+.align-items-*-baseline	根据不同屏幕设备，让元素在基线上显示在同一行。
+.align-items-*-stretch	根据不同屏幕设备，让元素延展高度并显示在同一行。
+单独一个子元素的对齐方式
+.align-self-*-start	据不同屏幕设备，让单独一个子元素显示在头部。
+.align-self-*-end	据不同屏幕设备，让单独一个子元素显示在尾部
+.align-self-*-center	据不同屏幕设备，让单独一个子元素显示在居中位置
+.align-self-*-baseline	据不同屏幕设备，让单独一个子元素显示在基线位置
+.align-self-*-stretch	据不同屏幕设备，延展一个单独子元素
+
+
+
+多媒体对象图片
+要创建一个多媒体对象，可以在容器元素上添加 .media 类，然后将多媒体内容放到子容器上，
+子容器需要添加 .media-body 类，然后添加外边距，内边距等效果:
+多媒体对象可以多个嵌套（一个多媒体对象中包含另外一个多媒体对象）
+要嵌套多媒体对象，可以把新的 .media 容器放到 .media-body 容器中:
+如果你想将头像图片显示在右侧，可以在 .media-body 容器后添加图片:
+我们可以使用 align-self-* 相关类来设置多媒体对象的图片显示位置：
