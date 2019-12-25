@@ -4,6 +4,32 @@
     box-sizing: border-box;
 }
 
-body::-webkit-scrollbar-thumb{
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/**
+  滚条
+ */
+body::-webkit-scrollbar{
     width: 10px;
 }
+body::-webkit-scrollbar-thumb{
+    background-color: #bbb;
+}
+
+body{
+    background-color:#f0f0f0;
+
+    /*cursor: url(../img/cursor/normal.cur),default;*/
+}
+
+.background{
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+}
+
+
