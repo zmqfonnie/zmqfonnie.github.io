@@ -1,3 +1,0 @@
-$(function () {
-    $(".jumbotron").addClass("java");
-})
