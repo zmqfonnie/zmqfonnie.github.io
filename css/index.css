@@ -10,42 +10,63 @@
     box-sizing: border-box;
 }
 
-/**
-  滚动条宽度
- */
-body::-webkit-scrollbar{
-    width: 10px;
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+    width: 6px; /*滚动条宽度*/
 }
-/**
-    滚动条
- */
-body::-webkit-scrollbar-thumb{
-    background-color: #bbb;
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+    border-radius: 10px; /*滚动条的背景区域的圆角*/
+    /*background-color: #bbb;!*滚动条的背景颜色*!*/
 }
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+    border-radius: 10px; /*滚动条的圆角*/
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #bbb; /*滚动条的背景颜色*/
+}
+
 /**
 文本选中
  */
 ::selection {
-    background: rgba(0,149,255,.1);
+    background: rgba(0, 149, 255, .1);
 }
 
-
-
-body{
-
+body {
     line-height: 1.8;
     font-size: 16px;
-    background-color:#f5f5f5;
+    background-color: #f5f5f5;
     color: #848484;
     font-weight: 300;
     /*cursor: url(../img/cursor/normal.cur),default;*/
 }
 
-.background{
-    background-image: url(../img/background.jpg);
-    background-size: cover;
+#fonnie-header {
     position: relative;
-    background-position: center center;
+    margin-bottom: 0;
 }
+
+#fonnie-header #fonnie-header-section {
+    position: fixed;
+    padding: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(40, 42, 44, .4);
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
 
 
